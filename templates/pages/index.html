@@ -1,0 +1,110 @@
+{% extends 'layout.html'%}
+{% load static %}
+
+{% block content %}
+<div class="jumbotron border border-success">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1400">
+                        <img src="{% static 'main/h1.jpg' %}" class="rounded d-block mx-auto  w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1400">
+                        <img src="{% static 'main/z1.jpg' %}" class="rounded d-block mx-auto w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1400">
+                        <img src="{% static 'main/h2.jpg' %}" class="rounded d-block mx-auto w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1400">
+                        <img src="{% static 'main/ü1.jpg' %}" class="rounded d-block mx-auto w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1400">
+                        <img src="{% static 'main/h3.jpg' %}" class="rounded d-block mx-auto w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1400">
+                        <img src="{% static 'main/zy1.jpg' %}" class="rounded d-block mx-auto w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h1 class="display-3">
+                <p class="text-success">
+                    What are we selling?
+                </p>
+            </h1>
+            <p class="lead">This is a simple hero unit, a simple
+                jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+        </div>
+    </div>
+
+    <hr class="my-4">
+    <p>&nbsp;  It uses utility classes for typography and spacing to
+        space content out within the larger container.</p>
+    <div class="btn">
+        <a class="btn btn-success mb-3" href="{% url 'about' %}" role="button">Learn more</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-bady">
+                        <div class="card-title">&nbsp; About Tahtalı Karadut Village</div>
+                        <p class="card-text">
+                            &nbsp;Tahtalıkaradut is a village in Musabeyli district of Kilis Province,
+                            Turkey. At 36°56′N 36°55′E it is situated in the typical peneplain area
+                            of the south eastern Turkey. <br> &nbsp;It is 25 kilometres (16 mi) north of Musabeyli and
+                            58 kilometres (36 mi) north of Kilis. <br> &nbsp;The population of Tahtalıkaradut is 1353 [1] as of
+                            2010. The main products of the village are olive, grapes and cereals.
+                        </p>
+                        <p class="card-text"></p>
+                        <small class="text-muted"> 19 days ago </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="card-img" src="{% static 'main/koyinfo.jpg' %}" alt="">
+                </div>
+                <div class="col-md-6">
+                    <img class="card-img" src="{% static 'koy/k5.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

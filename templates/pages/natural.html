@@ -1,0 +1,45 @@
+{% extends 'layout.html'%}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        {% if naturals %}
+            {% for natural in naturals %}
+                <div class="card mb-3 border border-warning">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="rounded d-block mx-auto w-100 border border-success" src="{% static natural.get_image_path %}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-bady">
+                                <div class="card-title">
+                                    <h3>
+                                        {{ natural.name}}
+                                    </h3> 
+                                </div>
+                                <p class="card-text">
+                                    {{ natural.description}}
+                                </p>
+                                <p class="lead">
+                                    <a class="btn btn-outline-success btn-lg" href="#" role="button">Buy</a>
+                                </p>
+                                <span class="minimum-required-price text-muted">
+                                    Minimum Order  5kg</span>
+                                 <br><br>
+                                <small class="text-primary"> {{ natural.created_date}} </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+                <div class="alert alert-warning">
+                    <p>
+                        No natural products
+                    </p>
+                </div>
+        {% endif %}        
+    </div>
+</div>
+{% endblock %}

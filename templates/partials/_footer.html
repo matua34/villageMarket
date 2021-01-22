@@ -1,0 +1,59 @@
+{% load static %}
+<footer>
+    <div class="footer py-3 mt-3 border border-success">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <a href="{% url 'index' %}">
+                            <img src="{% static 'main/logo.jpg' %}"  class="rounded" style=" 150px; height: 150px;" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <div class="social-section text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-item">
+                                <a href="https://www.facebook.com/MatuDarkRider"
+                                    class="btn-floating btn-fb waves-effect waves-light">
+                                    <i class="fab fa-facebook-f"> </i>
+                                </a>
+                            </li>
+                            <li href="#" class="list-item">
+                                <a class="btn-floating btn-tw waves-effect waves-light">
+                                    <i class="fab fa-twitter"> </i>
+                                </a>
+                            </li>
+                            <li href="#" class="list-inline-item">
+                                <a class="btn-floating btn-gplus waves-effect waves-light">
+                                    <i class="fab fa-instagram"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/metinalparslan/"
+                                    class="btn-floating btn-li waves-effect waves-light">
+                                    <i class="fab fa-linkedin-in"> </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-banks text-center">
+                        <p class="text-dark">
+                            With Tahtalı Karadut Village Market, your payments are 100% safe
+                        </p>
+                        <img src="{% static 'main/banks.png' %}" alt="">
+                    </div>
+                </div>
+                <span class="text-muted">
+                    <p class="text-center">
+                        Natural Village Products Market Aplication
+                        By Metin ALPARSLAN
+                    </p>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
